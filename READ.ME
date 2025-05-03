@@ -1,0 +1,35 @@
+Vault CLI – Simple Secure Password Manager
+Vault CLI is a lightweight, terminal-based password manager written in Go. It securely stores your passwords in an encrypted file using a 32-byte encryption key. All data is stored locally and never leaves your machine.
+
+Features
+AES-256 encryption for all stored data
+
+Add, retrieve, delete, and list password entries from the command line
+
+Generate strong random passwords
+
+No cloud dependency – your secrets, your control
+
+Getting Started
+1. Clone the Repository
+    git clone https://github.com/yourusername/vault-cli.git
+    cd vault-cli
+
+2. Generate a Secure 32-Byte Key
+    Before using Vault CLI, you must generate a secure 32-byte key.
+    Run the following Python script:
+    import secrets
+    import string
+    alphabet = string.ascii_letters + string.digits
+    key = ''.join(secrets.choice(alphabet) for _ in range(32))
+    print(key)
+    Copy the printed key and save it in a secure place.
+    You will need this key to access your vault.
+
+3. Set the VAULT_KEY Environment Variable
+    export VAULT_KEY= key
+    Replace with the key you generated in the previous step.
+
+4. Build and Run
+    make build 
+    make install // Please edit the MAKEFILE to add your PATH.
