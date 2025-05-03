@@ -13,7 +13,6 @@ No cloud dependency – your secrets, your control
 Getting Started
 1. Clone the Repository
     git clone https://github.com/yourusername/vault-cli.git
-    cd vault-cli
 
 2. Generate a Secure 32-Byte Key
     Before using Vault CLI, you must generate a secure 32-byte key.
